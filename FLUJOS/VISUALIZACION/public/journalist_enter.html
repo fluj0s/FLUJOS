@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalist Enter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="/images/flujos_logo5.png" alt="FLUJØS 3D Logo" class="logo">
+            <div class="header-buttons">
+                <a href="login.html" class="small-button">Login/Sign Up</a>
+                <div class="small-button">Language</div> <!-- El botón de idioma con el dropdown se implementará más adelante -->
+                <a href="journalist.html" class="small-button">Journalist</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Toggle Button -->
+    <button id="sidebarToggle">Toggle Sidebar</button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Graficos generados por el script de output.js -->
+        <div id="canvasContainer"></div>
+        <div class="background">
+            <!-- Enlaces a otras páginas -->
+            <a href="glob-war.html">
+                <img class="img1" src="/images/flujos.jpg">
+            </a>
+            <a href="int-sec.html">
+                <img class="img2" src="/images/fujos5.jpg">
+            </a>
+            <a href="climate.html">
+                <img class="img3" src="/images/flujos6.jpg">
+            </a>
+            <a href="eco-corp.html">
+                <img class="img4" src="/images/flujos4.jpg">
+            </a>
+            <a href="popl-up.html">
+                <img class="img5" src="/images/flujos3.jpg">
+            </a>
+        </div>
+    </main>
+
+    <!-- Sidebar with Parameters -->
+    <div id="sidebar">
+        <h2>Parámetros</h2>
+        <form>
+            <!-- Aquí van los parámetros específicos para añadir nodos -->
+            <label for="nodo_nombre">Nombre del Nodo:</label>
+            <input type="text" id="nodo_nombre" name="nodo_nombre" required>
+
+            <label for="nodo_descripcion">Descripción del Nodo:</label>
+            <input type="text" id="nodo_descripcion" name="nodo_descripcion" required>
+
+            <label for="nodo_imagen">Imagen del Nodo:</label>
+            <input type="file" id="nodo_imagen" name="nodo_imagen" accept="image/*" required>
+
+            <input type="submit" value="Añadir Nodo">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="#">GitHub</a> | <a href="#">Telegram</a> | <a href="#">Email</a> | <a href="#">Web de Tor</a></p>
+    </footer>
+
+    <!-- Script para los gráficos generados por output.js -->
+    <script src="output.js"></script>
+</body>
+</html>

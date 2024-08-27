@@ -1,0 +1,27 @@
+proyecto/
+|
+|-- .gitignore                 # Archivos y directorios ignorados por git
+|-- package-lock.json          # Bloquea las versiones de las dependencias
+|-- FLUJOS_APP.js              # Punto de entrada de tu aplicación
+|
+|-- DOCS/                      # Documentación del proyecto
+|
+|-- BACK_BACK/                 # Contiene elementos relacionados con el backend
+|   |-- entorno/               # Configuraciones del entorno o archivos relacionados
+|   |-- requirements/          # Dependencias y requerimientos del proyecto
+|   |-- OBSEI/                 # (No utilizado, considerar eliminar si no es necesario)
+|
+|-- VISUALIZACION/             # Código relacionado con la parte visual o frontend
+|   |-- node_modules/          # Módulos de Node.js
+|   |-- package.json           # Dependencias del frontend y scripts
+|   |-- package-lock.json      # Bloquea las versiones de las dependencias del frontend
+|   |-- public/                # Archivos estáticos (HTML, CSS, JS, imágenes)
+|   |   |-- images/            # Imágenes
+|   |   |-- ...                # Otros archivos estáticos (html, css, js)
+|   |-- controllers/           # Controladores para la lógica del negocio
+|   |-- models/                # Modelos o esquemas de la base de datos
+|   |-- graphql/               # Definiciones para GraphQL (si se usa)
+|   |-- routes/                # Rutas de la aplicación
+|
+|-- .gitignore                 # Archivos y directorios ignorados por git
+`-- package-lock.json          # Bloquea las versiones de las dependencias

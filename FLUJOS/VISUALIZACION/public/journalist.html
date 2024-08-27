@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journalist Login</title>
+    <link rel="stylesheet" href="journalist.css">
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="/images/flujos_logo5.png" alt="Flujos Logo">
+    </div>
+
+    <div class="canvas-container">
+        <img class="image-left" src="/images/journalist_fondo.jpg" alt="Fondo izquierdo">
+        <div class="login-container">
+            <h1>Journalist Login</h1>
+            <form onsubmit="login(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="publicKey">Public Key:</label>
+                <input type="text" id="publicKey" name="publicKey" required>
+
+                <input type="submit" value="Login">
+            </form>
+        </div>
+        <img class="image-right" src="/images/journalist_fondo2.jpg" alt="Fondo derecho">
+    </div>
+
+    <script>
+        function login(event) {
+            event.preventDefault(); // Evitar que el formulario se envíe por defecto
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const publicKey = document.getElementById('publicKey').value;
+
+            // Enviar los datos del formulario mediante una petición AJAX a nuestro endpoint de login
+            fetch('/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password, publicKey })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Si el servidor devuelve un redireccionamiento, redirigimos al usuario
+                if (data.redirect) {
+                    window.location.href = data.redirect;
+                } else {
+                    // Si no hay redireccionamiento, se podría mostrar un mensaje de error
+                    console.log('Credenciales inválidas');
+                }
+            })
+            .catch(error => {
+                console.error('Error en la petición AJAX:', error);
+            });
+        }
+    </script>
+</body>
+</html>

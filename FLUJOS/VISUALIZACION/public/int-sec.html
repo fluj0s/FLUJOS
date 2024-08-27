@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="int-sec.css">
+    <title>INT-SEC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/3d-force-graph"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="int-sec.html" class="int-sec">INT-SEC</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="int_sec_container" style="position: absolute; width: 100%; height: 100%; opacity: 0.5;"></div>
+        <div class="background">
+            <img src="/images/fujos5.jpg">
+            <img src="/images/fujos5.jpg">
+            <img src="/images/fujos5.jpg">
+            <img src="/images/fujos5.jpg">
+            <img src="/images/fujos5.jpg">
+            <script>
+                setTimeout(function() {
+                    var fondo = document.querySelector('.background');
+                    fondo.classList.add('fade-out');
+                    fondo.style.pointerEvents = 'none';
+                }, 1000);
+            </script>
+        </div>
+        <div class="grafico">
+            <script src="output_int_sec.js"></script>
+        </div>
+    </main>
+
+    <div id="sidebar">
+        <h2>Parámetros</h2>
+        
+        <form id="paramForm">
+            <label for="fecha_inicio">Fecha de inicio:</label>
+            <input type="date" id="fecha_inicio" name="fecha_inicio">
+            
+            <label for="fecha_fin">Fecha de fin:</label>
+            <input type="date" id="fecha_fin" name="fecha_fin">
+            
+            <label for="nodos">Nodos:</label>
+            <input type="number" id="nodos" name="nodos" value="200">
+            
+            <label for="complejidad">Complejidad:</label>
+            <input type="range" id="complejidad" name="complejidad" min="1" max="10" value="5">
+            
+            <label for="param1">Busqueda por palabra:</label>
+            <input type="text" id="param1" name="param1">
+    
+            <label for="color1">Color 1:</label>
+            <input type="color" id="color1" name="color1">
+    
+            <label for="param2">Busqueda por temática personalizada:</label>
+            <input type="text" id="param2" name="param2">
+    
+            <label for="color2">Color 2:</label>
+            <input type="color" id="color2" name="color2">
+            
+            <input type="submit" value="Aplicar">
+        </form>
+    </div>
+    
+    <button id="sidebarToggle">Toggle Sidebar</button>
+
+    <footer>
+        <p><a href="#">GitHub</a> | <a href="#">Telegram</a> | <a href="#">Email</a> | <a href="#">Web de Tor</a></p>
+    </footer>
+</body>
+</html>

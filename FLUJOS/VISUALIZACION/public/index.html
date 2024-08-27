@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Nosifer&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1 class="title">FLUJ0S</h1>
+            <div class="header-buttons">
+                <div class="small-button">Language</div>
+                <a href="journalist.html" class="small-button">Journalist</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="glob-war.html" class="glob-war">GLOB-WAR</a></li>
+            <li><a href="int-sec.html" class="int-sec">INT-SEC</a></li>
+            <li><a href="climate.html" class="climate">CLIMATE</a></li>
+            <li><a href="eco-corp.html" class="eco-corp">ECO-CORP</a></li>
+            <li><a href="popl-up.html" class="popl-up">Popl-up</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="canvasContainer" style="position: absolute; width: 100%; height: 100%; opacity: 0.5;"></div>
+        <div class="background">
+            <a href="glob-war.html">
+                <img class="img1" src="/images/flujos.jpg">
+            </a>
+            <a href="int-sec.html">
+                <img class="img2" src="/images/fujos5.jpg">
+            </a>
+            <a href="climate.html">
+                <img class="img3" src="/images/flujos6.jpg">
+            </a>
+            <a href="eco-corp.html">
+                <img class="img4" src="/images/flujos4.jpg">
+            </a>
+            <a href="popl-up.html">
+                <img class="img5" src="/images/flujos3.jpg">
+            </a>
+        </div>
+
+        <!-- Botones sobre las imágenes -->
+        <div class="button-overlay">
+            <div class="button-column">
+                <a href="glob-war.html?subtematica=conflictos_internacionales" class="overlay-button">Conflictos Internacionales</a>
+                <a href="glob-war.html?subtematica=guerras_civiles" class="overlay-button">Guerras Civiles</a>
+                <a href="glob-war.html?subtematica=terrorismo" class="overlay-button">Terrorismo</a>
+                <a href="glob-war.html?subtematica=armas" class="overlay-button">Armas</a>
+                <a href="glob-war.html?subtematica=alianzas_militares" class="overlay-button">Alianzas Militares</a>
+            </div>
+            <div class="button-column">
+                <a href="int-sec.html?subtematica=inteligencia" class="overlay-button">Inteligencia</a>
+                <a href="int-sec.html?subtematica=ciberseguridad" class="overlay-button">Ciberseguridad</a>
+                <a href="int-sec.html?subtematica=espionaje" class="overlay-button">Espionaje</a>
+                <a href="int-sec.html?subtematica=seguridad_nacional" class="overlay-button">Seguridad Nacional</a>
+                <a href="int-sec.html?subtematica=contraterrorismo" class="overlay-button">Contraterrorismo</a>
+            </div>
+            <div class="button-column">
+                <a href="climate.html?subtematica=cambio_climatico" class="overlay-button">Cambio Climático</a>
+                <a href="climate.html?subtematica=desastres_naturales" class="overlay-button">Desastres Naturales</a>
+                <a href="climate.html?subtematica=conservacion" class="overlay-button">Conservación</a>
+                <a href="climate.html?subtematica=energia_renovable" class="overlay-button">Energía Renovable</a>
+                <a href="climate.html?subtematica=contaminacion" class="overlay-button">Escasez de agua</a>
+            </div>
+            <div class="button-column">
+                <a href="eco-corp.html?subtematica=economia_global" class="overlay-button">Economía Global</a>
+                <a href="eco-corp.html?subtematica=corporaciones_multinacionales" class="overlay-button">Corporaciones Multinacionales</a>
+                <a href="eco-corp.html?subtematica=comercio_internacional" class="overlay-button">Comercio Internacional</a>
+                <a href="eco-corp.html?subtematica=organismos_financieros" class="overlay-button">Organismos Financieros</a>
+                <a href="eco-corp.html?subtematica=desigualdad_economica" class="overlay-button">Desigualdad Económica</a>
+            </div>
+            <div class="button-column">
+                <a href="popl-up.html?subtematica=sobrepoblacion" class="overlay-button">Sobrepoblación</a>
+                <a href="popl-up.html?subtematica=covid" class="overlay-button">COVID</a>
+                <a href="popl-up.html?subtematica=migraciones" class="overlay-button">Migraciones</a>
+                <a href="popl-up.html?subtematica=urbanizacion" class="overlay-button">Urbanización</a>
+                <a href="popl-up.html?subtematica=distribucion_edad" class="overlay-button">Despoblaciòn rural</a>
+            </div>
+        </div>
+    </main>
+
+    <button id="sidebarToggle">Toggle Sidebar</button>
+
+    <footer>
+        <p><a href="#">GitHub</a> | <a href="#">Telegram</a> | <a href="#">Email</a> | <a href="#">Web de Tor</a></p>
+    </footer>
+
+</body>
+</html>

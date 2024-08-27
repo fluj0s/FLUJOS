@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* Cambiar el color del texto a blanco */
+}
+
+/* Estilo del formulario */
+.login-container {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #111111; /* Fondo negro */
+    border: 2px solid #39ff14; /* Borde verde claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Añadimos posición relativa para que los elementos internos se posicionen respecto a este contenedor */
+}
+
+
+/* ... Estilos existentes ... */
+
+/* Estilos para los enlaces dentro del formulario */
+.login-container a {
+    color: #39ff14; /* Cambiar el color del enlace a verde claro */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+    color: #2ECC40; /* Cambiar el color del enlace en hover a verde más claro */
+}
+
+/* ... Resto de tus estilos ... */
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #39ff14; /* Cambiar el color del título a verde claro */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #39ff14; /* Cambiar el color de las etiquetas a verde claro */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    background-color: #222222; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    border: 2px solid #39ff14; /* Borde verde claro en hover */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px; /* Añadir margen inferior para separar el formulario del logo */
+}
+
+.logo {
+    width: 400px; /* Ajustar el tamaño de la imagen según sea necesario */
+    height: auto;
+}
+
+/* Estilos para las imágenes de fondo */
+.canvas-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh; /* Ajusta la altura mínima para que ocupe toda la pantalla */
+    margin: 20px 0;
+    overflow: hidden; /* Evita que las imágenes desborden del contenedor */
+}
+
+.image-left,
+.image-right {
+    height: 100vh; /* Ajusta la altura para que ocupe toda la pantalla */
+    width: auto; /* Ajusta el ancho de las imágenes para mantener la relación de aspecto */
+    position: absolute;
+    top: 0;
+    max-width: 40%; /* Ajusta el ancho máximo de las imágenes de fondo */
+}
+
+.image-left {
+    left: 0;
+}
+
+.image-right {
+    right: 0;
+}
+
+.login-content {
+    /* Ajusta estos estilos según tus necesidades */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 300px; /* Ajusta el ancho máximo del contenido */
+    position: relative; /* Añadimos posición relativa para que los elementos internos se posicionen respecto a este contenedor */
+}
+
+/* Añade el siguiente estilo para evitar que las imágenes desborden del contenedor */
+.login-content > img {
+    max-width: 100%;
+    height: auto;
+}

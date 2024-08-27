@@ -1,0 +1,988 @@
+@font-face {
+    font-family: "Retrolift";
+    src: url("/home/pancho/PROGRAMACION/FLUJOS/retrolift.woff2") format("woff2"),
+         url("/home/pancho/PROGRAMACION/FLUJOS/retrolift.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code';
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background: #000000;
+    color: #000000;
+}
+
+header {
+    position: relative;
+    height: 120px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.title {
+    font-family: 'Nosifer';
+    color: #ffffff;
+    font-size: 6.5rem;
+    margin: 0 auto;
+    line-height: 1.2;
+    align-self: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 70%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.small-button {
+    margin-left: 5px;
+    margin-right: 3px;
+    padding: 4px 8px;
+    font-size: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.small-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    text-shadow: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    color: #ff1a1a;
+    padding: 10px 0;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 6em;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px 40px;
+    box-shadow: 0 0 0px rgba(28, 103, 241, 0);
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    z-index: 1;
+    width: 40vw;
+    height: 20vh;
+    border: 3vw;
+    align-items: center;
+    border: 3px solid;
+}
+
+.nav-links a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: 2vw 1vw;
+    border: 3px solid black;
+}
+
+.glob-war:hover { color: #39ff14; }
+.int-sec:hover { color: #ff69b4; }
+.climate:hover { color: #ff4500; }
+.eco-corp:hover { color: #00fff2; }
+.popl-up:hover { color: #0066ff; }
+
+.glob-war {
+    color: #FF4136;
+    background-color: red;
+}
+
+.int-sec {
+    color: #0074D9;
+    background-color: darkblue;
+}
+
+.climate {
+    color: #2ECC40;
+    background-color: lightgreen;
+}
+
+.eco-corp {
+    color: #FFDC00;
+    background-color: yellow;
+}
+
+.popl-up {
+    color: #FF851B;
+    background-color: orange;
+}
+
+
+.background {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden; /* Oculta cualquier posible desplazamiento horizontal */
+    margin: 0 auto; 
+    padding: 0;
+}
+
+.background a {
+    display: block;
+    flex: 1; /* Asegura que cada imagen se expanda uniformemente para ocupar todo el espacio disponible */
+    height: 100%;
+    transition: transform 1.5s ease;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1.5s ease;
+    margin: 0; /* Elimina cualquier margen alrededor de las imágenes */
+}
+
+.background img:hover {
+    transform: scale(1.1);
+}
+
+
+#sidebar.active {
+    transform: translateX(0);
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-image: url("/images/flujos7.jpg");
+    background-size: cover;
+    color: #39ff14;
+    padding: 30px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-90%);
+    transition: transform 0.3s ease-out;
+    overflow: auto;
+    font-size: 18px;
+    z-index: 3;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#sidebar h2 {
+    color: #39ff14;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: -1px 0 black, 0 3px black, 3px 0 black, 0 -1px black;
+}
+
+#sidebar:hover {
+    transform: translateX(0);
+}
+
+#sidebarToggle {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    background: #007BFF;
+    color: #39ff14;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+#sidebarToggle {
+    display: none;
+}
+
+#sidebar form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#sidebar label {
+    color: #39ff14;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#sidebar input {
+    padding: 10px;
+    border: 2px solid #39ff14;
+    background: black;
+    color: #39ff14;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+#sidebar input:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#sidebar input[type="submit"] {
+    color: #39ff14;
+    background: #ff6600;
+    cursor: pointer;
+}
+
+#sidebar input[type="submit"]:hover {
+    background: #ff6600;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: #39ff14;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 1;
+}
+
+footer a {
+    color: #39ff14;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #2ECC40;
+}
+
+footer p {
+    margin: 0;
+}
+
+#canvasContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.button-overlay {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Incrementa el espacio entre botones */
+    width: 13%; /* Reducido el ancho de las columnas de botones */
+}
+
+.overlay-button {
+    display: block;
+    padding: 10px 15px; /* Ajustar para reducir el tamaño del botón */
+    color: #ffffff;
+    font-weight: bold; /* Hacer el texto más grueso */
+    text-decoration: none;
+    border-radius: 30px; /* Bordes redondeados para un efecto de cilindro */
+    font-size: 1em;
+    border: 2px solid #ffffff;
+    background-color: black; /* Fondo negro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.overlay-button:hover {
+    transform: scale(1.05);
+    color: #ffffff;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries for larger screens */
+@media screen and (max-width: 1920px) {
+    .background a {
+        width: 18%;
+    }
+
+    .button-column {
+        width: 18%;
+    }
+
+    .overlay-button {
+        font-size: 1.1em;
+        padding: 16px 20px;
+    }
+
+    .title {
+        font-size: 7rem;
+    }
+
+    .small-button {
+        font-size: 1em;
+        padding: 8px 14px;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .background a {
+        width: 20%;
+    }
+
+    .button-column {
+        width: 20%;
+    }
+
+    .overlay-button {
+        font-size: 1em;
+        padding: 14px 18px;
+    }
+
+    .title {
+        font-size: 6.5rem;
+    }
+
+    .small-button {
+        font-size: 0.9em;
+        padding: 7px 13px;
+    }
+
+    .nav-links a {
+        font-size: 0.9em;
+        padding: 18px 35px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .background a {
+        width: 22%;
+    }
+
+    .button-column {
+        width: 22%;
+    }
+
+    .overlay-button {
+        font-size: 0.95em;
+        padding: 12px 16px;
+    }
+
+    .title {
+        font-size: 6rem;
+    }
+
+    .small-button {
+        font-size: 0.85em;
+        padding: 6px 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.85em;
+        padding: 16px 30px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .background a {
+        width: 25%;
+    }
+
+    .button-column {
+        width: 25%;
+    }
+
+    .overlay-button {
+        font-size: 0.9em;
+        padding: 10px 14px;
+    }
+
+    .title {
+        font-size: 5.5rem;
+    }
+
+    .small-button {
+        font-size: 0.8em;
+        padding: 6px 11px;
+    }
+
+    .nav-links a {
+        font-size: 0.8em;
+        padding: 14px 25px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .background a {
+        width: 30%;
+    }
+
+    .button-column {
+        width: 30%;
+    }
+
+    .overlay-button {
+        font-size: 0.85em;
+        padding: 9px 12px;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .small-button {
+        font-size: 0.75em;
+        padding: 5px 10px;
+    }
+
+    .nav-links a {
+        font-size: 0.75em;
+        padding: 12px 20px;
+    }
+}
+/* Para teléfonos de 768px de ancho en portrait */
+@media screen and (max-width: 768px) and (orientation: portrait) {
+    .background a {
+        width: 90%;
+    }
+
+    .button-column {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .overlay-button {
+        font-size: 0.6rem;
+        padding: 6px 8px;
+    }
+
+    .title {
+        font-size: 5rem;
+    }
+
+    .small-button {
+        font-size: 0.6rem;
+        padding: 5px 8px;
+    }
+
+    .nav-links {
+        gap: 2em; /* Reduce el espacio entre los enlaces del nav */
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Para teléfonos de 576px de ancho en portrait */
+@media screen and (max-width: 576px) and (orientation: portrait) {
+    .background a {
+        width: 95%;
+    }
+
+    .button-column {
+        width: 95%;
+        gap: 8px;
+    }
+
+    .overlay-button {
+        font-size: 0.5rem;
+        padding: 5px 7px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .small-button {
+        font-size: 0.5rem;
+        padding: 4px 7px;
+    }
+
+    .nav-links {
+        gap: 1.5em;
+    }
+
+    .nav-links a {
+        font-size: 0.4rem;
+        padding: 7px 14px;
+    }
+}
+
+/* Para teléfonos de 411px de ancho en portrait */
+@media screen and (max-width: 411px) and (orientation: portrait) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .overlay-button {
+        font-size: 0.4rem;
+        padding: 4px 5px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .small-button {
+        font-size: 0.4rem;
+        padding: 4px 5px;
+    }
+
+    .nav-links {
+        gap: 1em;
+    }
+
+    .nav-links a {
+        font-size: 0.6rem;
+        padding: 6px 12px;
+    }
+}
+
+/* Para teléfonos de 375px de ancho en portrait */
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 100%;
+        gap: 3px;
+    }
+
+    .overlay-button {
+        font-size: 0.35rem;
+        padding: 3px 4px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .small-button {
+        font-size: 0.35rem;
+        padding: 3px 4px;
+    }
+
+    .nav-links {
+        gap: 0.75em;
+    }
+
+    .nav-links a {
+        font-size: 0.5rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Para teléfonos de 320px de ancho en portrait */
+@media screen and (max-width: 320px) and (orientation: portrait) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 100%;
+        gap: 2px;
+    }
+
+    .overlay-button {
+        font-size: 0.3rem;
+        padding: 2px 3px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .small-button {
+        font-size: 0.3rem;
+        padding: 2px 3px;
+    }
+
+    .nav-links {
+        gap: 0.5em;
+    }
+
+    .nav-links a {
+        font-size: 0.4rem;
+        padding: 4px 8px;
+    }
+}
+
+
+/* For devices with smaller screens (e.g., 600px - 800px width) */
+@media screen and (min-width: 600px) and (max-width: 800px) and (max-height: 400px) and (orientation: landscape) {
+    .background {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .button-overlay {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .button-column {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    .overlay-button {
+        font-size: 0.3rem;
+        padding: 2px 2px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .small-button {
+        font-size: 0.3rem;
+        padding: 2px 2px;
+    }
+
+    .nav-links a {
+        font-size: 0.3rem; /* Reduced font size */
+        padding: 15px 30px; /* Adjusted padding */
+    }
+}
+
+/* For medium-sized devices (e.g., 800px - 1000px width) */
+@media screen and (min-width: 800px) and (max-width: 1000px) and (max-height: 450px) and (orientation: landscape) {
+    .background {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .button-overlay {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .button-column {
+        width: 16%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    .overlay-button {
+        font-size: 0.35rem;
+        padding: 3px 3px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .small-button {
+        font-size: 0.35rem;
+        padding: 3px 3px;
+    }
+
+    .nav-links a {
+        font-size: 0.3rem; /* Reduced font size */
+        padding: 15px 30px; /* Adjusted padding */
+    }
+}
+
+/* For larger devices (e.g., 1000px - 1200px width) */
+@media screen and (min-width: 1000px) and (max-width: 1200px) and (max-height: 500px) and (orientation: landscape) {
+    .background {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .button-overlay {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .button-column {
+        width: 17%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    .overlay-button {
+        font-size: 0.4rem;
+        padding: 3px 4px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .small-button {
+        font-size: 0.4rem;
+        padding: 3px 4px;
+    }
+
+    .nav-links a {
+        font-size: 0.3rem; /* Reduced font size */
+        padding: 15px 30px; /* Adjusted padding */
+    }
+}
+
+/* For even larger devices (e.g., 1200px - 1500px width) */
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (max-height: 700px) and (orientation: landscape) {
+    .background {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .button-overlay {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 100%;
+        padding-bottom: 0px;
+    }
+
+    .button-column {
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: auto;
+    }
+
+    .overlay-button {
+        font-size: 0.45rem;
+        padding: 4px 5px;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .small-button {
+        font-size: 0.45rem;
+        padding: 4px 5px;
+    }
+
+    .nav-links a {
+        font-size: 0.3rem; /* Reduced font size */
+        padding: 15px 30px; /* Adjusted padding */
+    }
+}
+
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 20%;
+        gap: 5px;
+        margin-top: 40px; /* Push buttons down to avoid navbar */
+    }
+
+    .overlay-button {
+        font-size: 0.35rem;
+        padding: 2px 4px;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+
+    .small-button {
+        font-size: 0.35rem;
+        padding: 2px 4px;
+    }
+
+    .nav-links a {
+        font-size: 0.35rem;
+        padding: 2px 4px;
+    }
+}
+
+/* For devices with width around 700px */
+@media screen and (max-width: 700px) and (orientation: landscape) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 25%;
+        gap: 5px;
+        margin-top: 50px; /* Further adjustment */
+    }
+
+    .overlay-button {
+        font-size: 0.3rem;
+        padding: 2px 3px;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .small-button {
+        font-size: 0.3rem;
+        padding: 2px 3px;
+    }
+
+    .nav-links a {
+        font-size: 0.3rem;
+        padding: 2px 3px;
+    }
+}
+
+/* For smaller devices with width around 600px */
+@media screen and (max-width: 600px) and (orientation: landscape) {
+    .background a {
+        width: 100%;
+    }
+
+    .button-column {
+        width: 30%;
+        gap: 5px;
+        margin-top: 60px; /* Ensures the buttons are well below the navbar */
+    }
+
+    .overlay-button {
+        font-size: 0.5rem;
+        padding: 3px 5px;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .small-button {
+        font-size: 0.5rem;
+        padding: 3px 5px;
+    }
+
+    .nav-links a {
+        font-size: 0.5rem;
+        padding: 3px 5px;
+        z-index: 2;
+    }
+}
+
+/* Landscape mode for screens up to 480px wide */
+@media screen and (max-width: 480px) and (orientation: landscape) {
+    .button-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-bottom: 5px;
+        z-index: 1;
+    }
+
+    .button-column {
+        width: 28%;
+        gap: 2px;
+	margin-top:150px;
+    }
+
+    .overlay-button {
+        font-size: 0.45rem;
+        padding: 3px 4px;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .small-button {
+        font-size: 0.45rem;
+        padding: 3px 4px;
+    }
+
+    .nav-links a {
+        font-size: 0.45rem;
+        padding: 3px 4px;
+        z-index: 2;
+    }
+}
+
