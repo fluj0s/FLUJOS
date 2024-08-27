@@ -1,0 +1,112 @@
+=============================================================================
+DOCUMENTACIÓN DEL PROYECTO FLUJOS
+=============================================================================
+
+INTRODUCCIÓN:
+-------------
+El proyecto FLUJOS es una aplicación web diseñada para unir noticias y eventos del pasado para entender la historia como una sucesion de eventos .
+Combatir la desinformacion es el principal objetivo del proeycto . 
+
+ESTRUCTURA DEL PROYECTO:
+-------------------------
+El proyecto FLUJOS está organizado de la siguiente manera:
+
+- /flujos: Carpeta principal del proyecto.
+  - /BACK: Contiene los archivos y scripts relacionados con la parte del servidor y la base de datos.
+  - /FRONT: Contiene los archivos de la aplicación web del lado del cliente.
+  - /TENSOR_FLOW: Carpeta que alberga los componentes relacionados con TensorFlow y la inteligencia artificial.
+  - /DOCUMENTACIÓN: Documentación técnica y de usuario.
+
+INSTALACIÓN:
+------------
+Para configurar y ejecutar el proyecto FLUJOS, sigue estos pasos:
+
+1. Clona el repositorio desde GitLab:
+
+git clone https://gitlab.com/tu-usuario/flujos.git
+
+
+
+2. Crea y activa un entorno virtual:
+
+python3 -m venv env
+source env/bin/activate
+
+
+
+3. Instala las dependencias:
+
+pip install -r requirements.txt
+
+
+4. Configura la base de datos y realiza las migraciones:
+
+python manage.py migrate
+
+
+
+5. Crea un superusuario para administrar la aplicación:
+
+python manage.py createsuperuser
+
+
+
+EJECUCIÓN:
+----------
+Para ejecutar el proyecto FLUJOS en un entorno de desarrollo local, utiliza el siguiente comando:
+
+python manage.py runserver
+
+
+
+El proyecto estará disponible en http://localhost:8000/.
+
+ESTRUCTURA DEL PROYECTO (DETALLES):
+-------------------------------------
+- /BACK: Esta carpeta contiene la lógica del servidor Django y se encarga de la autenticación de usuarios y la gestión de la base de datos.
+
+- /FRONT: Aquí se encuentran los archivos estáticos y la interfaz de usuario de la aplicación web.
+
+- /TENSOR_FLOW: Carpeta dedicada a las implementaciones de TensorFlow y el procesamiento de datos relacionado con la inteligencia artificial.
+
+AUTENTICACIÓN DE USUARIOS:
+--------------------------
+El sistema de autenticación de usuarios permite a los usuarios registrarse, iniciar sesión y gestionar sus cuentas de usuario. Los datos se almacenan en una base de datos Elasticsearch.
+
+ENVÍO DE CORREOS ELECTRÓNICOS:
+-------------------------------
+El proyecto FLUJOS incluye un sistema de envío de correos electrónicos para funciones como verificación de correo electrónico y recuperación de contraseñas.
+
+SEGURIDAD Y PRIVACIDAD:
+-----------------------
+El proyecto FLUJOS se preocupa por la seguridad y privacidad de los usuarios y emplea medidas de seguridad estándar.
+
+IMPLEMENTACIÓN DE PGP:
+----------------------
+El proyecto utiliza PGP para garantizar la seguridad de las comunicaciones entre periodistas y la aplicación web.
+
+PRUEBAS:
+--------
+Para ejecutar las pruebas unitarias y de integración, utiliza el siguiente comando:
+
+python manage.py test
+
+
+
+DESPLEGUE:
+----------
+El despliegue del proyecto FLUJOS en un entorno de producción requiere [Instrucciones y mejores prácticas para desplegar el proyecto en un entorno de producción real].
+
+CONTRIBUCIONES:
+---------------
+¡Agradecemos las contribuciones! Si deseas contribuir al proyecto, sigue las pautas en [Enlace a las pautas de contribución en GitLab].
+
+CONTACTO:
+---------
+Para obtener ayuda o más información, comunícate con [Información de contacto].
+
+LICENCIA:
+---------
+Este proyecto se distribuye bajo la licencia [Nombre de la licencia]. Consulta el archivo LICENSE para más detalles.
+
+=============================================================================
