@@ -1,0 +1,92 @@
+# Crear un archivo llamado docs.txt y agregar el contenido necesario
+echo "
+# Descripción del Programa
+
+Este programa descarga artículos de Wikipedia relacionados con diversas temáticas, limpia y tokeniza el contenido, y guarda los resultados en archivos de texto. También compara la similitud de las palabras entre los primeros dos artículos descargados y calcula un porcentaje de similitud. El programa detiene la descarga cuando el tamaño total de los archivos supera los 10 GB y entonces ejecuta la tokenización de los artículos.
+
+# Paquetes Necesarios
+
+- \`transformers\`: Para tokenización usando BERT.
+- \`wikipedia-api\`: Para buscar y obtener el contenido de artículos de Wikipedia.
+
+# Comandos para Instalar los Paquetes en Linux
+
+Primero, asegúrate de tener \`pip\` instalado. Si no lo tienes, puedes instalarlo con:
+
+\`\`\`bash
+sudo apt update
+sudo apt install python3-pip
+\`\`\`
+
+Luego, instala los paquetes necesarios:
+
+\`\`\`bash
+pip install transformers wikipedia-api
+\`\`\`
+
+# Crear y Activar el Entorno Virtual
+
+Para evitar conflictos con otros proyectos y mantener el entorno limpio, se recomienda usar un entorno virtual. A continuación se muestran los pasos para crear y activar un entorno virtual:
+
+1. **Crear el entorno virtual:**
+
+   Navega al directorio de tu proyecto y crea un entorno virtual llamado \`venv\`:
+
+   \`\`\`bash
+   python3 -m venv venv
+   \`\`\`
+
+2. **Activar el entorno virtual:**
+
+   Para activar el entorno virtual, usa el siguiente comando:
+
+   \`\`\`bash
+   source venv/bin/activate
+   \`\`\`
+
+   Verás que el nombre del entorno virtual aparece antes del prompt de la terminal, indicando que el entorno virtual está activado.
+
+3. **Instalar los paquetes en el entorno virtual:**
+
+   Una vez activado el entorno virtual, instala los paquetes necesarios:
+
+   \`\`\`bash
+   pip install transformers wikipedia-api
+   \`\`\`
+
+# Ejecutar el Programa
+
+Con el entorno virtual activado, puedes ejecutar el programa principal:
+
+\`\`\`bash
+python3 main.py
+\`\`\`
+
+# Estructura del Proyecto
+
+Asegúrate de que tu proyecto tenga la siguiente estructura:
+
+\`\`\`
+proyecto/
+│
+├── main.py
+├── wikipedia_utils.py
+├── docs.txt
+└── venv/
+\`\`\`
+
+- \`main.py\`: Contiene el código principal que descarga, limpia, tokeniza y compara los artículos de Wikipedia.
+- \`wikipedia_utils.py\`: Contiene las funciones auxiliares para buscar y obtener contenido de Wikipedia.
+- \`docs.txt\`: Este documento de información.
+- \`venv/\`: El entorno virtual.
+" > docs.txt
+
+# Crear el entorno virtual y activar
+python3 -m venv venv
+source venv/bin/activate
+
+# Instalar los paquetes necesarios
+pip install transformers wikipedia-api
+
+# Mostrar mensaje de finalización
+echo "El entorno virtual se ha creado y los paquetes necesarios se han instalado. El contenido de docs.txt se ha generado."
