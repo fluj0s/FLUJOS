@@ -1,0 +1,16 @@
+Configurar ES_HOME:
+
+    Asegúrate de que la variable de entorno ES_HOME esté configurada en la máquina o servidor donde se ejecutará Elasticsearch. Puedes hacerlo agregando la siguiente línea en tu archivo .bashrc o .bash_profile:
+
+    bash
+
+export ES_HOME=/ruta/a/tu/elasticsearch
+
+Luego, recarga el archivo con source ~/.bashrc o source ~/.bash_profile.
+
+
+
+
+Mantener la estructura de directorios:
+
+    Asegúrate de que las subcarpetas data y logs existan dentro del directorio base especificado por ES_HOME. Elasticsearch almacenará los datos y registros allí.

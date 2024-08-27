@@ -1,0 +1,111 @@
+# Descripción del Proyecto
+
+Este proyecto se encarga de extraer, limpiar, y tokenizar artículos y archivos de diversas fuentes web. El programa realiza las siguientes tareas principales:
+
+1. **Extracción de artículos**: Extrae contenido de artículos desde sitios web especificados.
+2. **Descarga de archivos**: Descarga archivos en diferentes formatos como PDF, CSV, TXT, XLSX, DOCX, HTML, MD, y ZIP.
+3. **Procesamiento de archivos**: Lee el contenido de los archivos descargados y los prepara para la tokenización.
+4. **Tokenización**: Tokeniza el contenido de los artículos y archivos para su posterior análisis.
+
+# Estructura del Proyecto
+
+- `main_noticias.py`: Script principal que coordina todas las tareas.
+- `noticias_utils.py`: Contiene las funciones auxiliares para la extracción, descarga, limpieza, lectura, procesamiento y tokenización de los archivos.
+- `articulos/`: Directorio donde se guardan los artículos extraídos.
+- `archivos/`: Directorio donde se guardan los archivos descargados.
+
+# Paquetes Necesarios
+
+Para que este proyecto funcione correctamente, se deben instalar los siguientes paquetes de Python:
+
+- `requests`
+- `beautifulsoup4`
+- `transformers`
+- `PyPDF2`
+- `docx`
+- `openpyxl`
+- `urllib3`
+
+# Comandos para Instalar los Paquetes
+
+Primero, asegúrate de tener pip actualizado:
+
+```bash
+pip install --upgrade pip
+
+
+pip install requests beautifulsoup4 transformers PyPDF2 python-docx openpyxl urllib3
+
+
+Luego, instala los paquetes necesarios:
+
+bash
+
+pip install requests beautifulsoup4 transformers PyPDF2 python-docx openpyxl urllib3
+
+Creación y Activación del Entorno Virtual
+
+Dado que ya existe un entorno virtual llamado myenv en la carpeta FLUJOS_DATOS, puedes activarlo para evitar conflictos. Aquí están los pasos para crear y activar un entorno virtual, si es necesario.
+Creación del Entorno Virtual
+
+Si necesitas crear un nuevo entorno virtual, sigue estos pasos:
+
+bash
+
+cd ~/PROGRAMACION/FLUJOS_TODO/FLUJOS_DATOS
+python3 -m venv myenv
+
+Activación del Entorno Virtual
+
+Para activar el entorno virtual myenv, utiliza los siguientes comandos:
+
+En Linux/MacOS:
+
+bash
+
+source ~/PROGRAMACION/FLUJOS_TODO/FLUJOS_DATOS/myenv/bin/activate
+
+En Windows (cmd):
+
+cmd
+
+myenv\Scripts\activate
+
+En Windows (PowerShell):
+
+powershell
+
+myenv\Scripts\Activate.ps1
+
+Una vez activado el entorno virtual, podrás instalar los paquetes necesarios y ejecutar los scripts.
+Ejecución del Programa
+
+    Asegúrate de que el entorno virtual está activado.
+    Navega hasta la carpeta NOTICIAS:
+
+bash
+
+cd ~/PROGRAMACION/FLUJOS_TODO/FLUJOS_DATOS/NOTICIAS
+
+    Ejecuta el script principal:
+
+bash
+
+python main_noticias.py
+
+El programa extraerá, descargará, procesará y tokenizará los artículos y archivos según las fuentes web especificadas en el script.
+Notas Adicionales
+
+    Asegúrate de que las carpetas articulos y archivos existen antes de ejecutar el script.
+    Puedes modificar las URLs y las configuraciones en main_noticias.py y noticias_utils.py según tus necesidades específicas.
+
+Contacto
+
+Para cualquier duda o problema con el script, por favor, contacta con el administrador del proyecto.
+
+r
+
+
+Este `docs.txt` proporciona una guía clara y detallada sobre cómo configurar y ejecutar el proyecto, incluyendo todos los comandos necesarios para instalar los paquetes y configurar el entorno virtual.
+
+digo la parte del entorno virtual y todos estos pasos
