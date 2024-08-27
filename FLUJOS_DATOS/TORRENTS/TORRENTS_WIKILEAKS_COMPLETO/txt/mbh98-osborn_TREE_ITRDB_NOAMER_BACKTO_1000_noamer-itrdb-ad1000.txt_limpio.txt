@@ -1,0 +1,1 @@
+1 ar052txt 2 az510txt 3 ca528txt 4 ca529txt 5 ca530txt 6 ca533txt 7 ca534txt 8 ca535txt 9 co522txt 10 co524txt 11 ga002txt 12 ga003txt 13 la001txt 14 nc008txt 15 nm560txt 16 nm572txt 17 nv037txt 18 nv510txt 19 nv512txt 20 nv513txt 21 nv514txt 22 nv515txt 23 nv516txt 24 nv517txt 25 ut508txt 26 ut509txt 27 va021txt

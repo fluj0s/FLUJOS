@@ -1,0 +1,1 @@
+index of adminbackup index of adminbackup name last modified size description parent directory dirphtml 16mar1998 1742 10k treephtml 16mar1998 1812 447 apache2054 unix dav2 php440 server at farcepch port 80

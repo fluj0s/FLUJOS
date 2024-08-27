@@ -1,0 +1,1 @@
+canadian hugershof chronologies sent by fritz nov 92 mxd 47 files may need to be replaced with more precise data

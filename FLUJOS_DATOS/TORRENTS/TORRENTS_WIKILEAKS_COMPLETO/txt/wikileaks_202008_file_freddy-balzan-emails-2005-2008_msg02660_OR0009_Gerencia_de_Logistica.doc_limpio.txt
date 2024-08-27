@@ -1,0 +1,1 @@
+2 2 1 1 2 1 1 1 1 coord trafico seguimiento ordenes activador compras coord materia prima coord servicios jefe compras coord suministros analista gestion materiales coord gestion materiales analista gestion coordinador licitaciones ingenieria compras 4 4 asistente administrativo operador montacarga ubicador despachador gerente logistica jefe almacen

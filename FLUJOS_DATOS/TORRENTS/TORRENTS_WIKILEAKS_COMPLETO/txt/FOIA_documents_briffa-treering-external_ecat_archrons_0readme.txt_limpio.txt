@@ -1,0 +1,1 @@
+shiyatov vaganov ring width chrons subarctic transect received via schweingruber march 94 standardised with the corridor method

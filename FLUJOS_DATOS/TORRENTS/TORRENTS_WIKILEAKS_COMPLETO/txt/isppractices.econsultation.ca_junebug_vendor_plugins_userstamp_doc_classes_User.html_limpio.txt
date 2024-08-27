@@ -1,0 +1,1 @@
+class user class user in testuserstamp_testrb parent activerecordbase validate

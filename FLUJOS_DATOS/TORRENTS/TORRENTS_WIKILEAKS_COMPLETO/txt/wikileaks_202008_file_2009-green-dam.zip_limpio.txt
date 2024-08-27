@@ -1,0 +1,1 @@
+compile the c net binary which contains shellcode with the following instruction on vs environment csc nologo targetlibrary platformx86 noconfig baseaddress0x24240000 referencecwindowsmicrosoftnetframeworkv2050727systemdll referencecwindowsmicrosoftnetframeworkv2050727systemwindowsformsdll outexploitdll exploitcs

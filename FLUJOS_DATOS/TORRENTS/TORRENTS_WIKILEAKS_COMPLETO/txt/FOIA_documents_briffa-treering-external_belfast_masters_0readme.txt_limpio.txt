@@ -1,0 +1,1 @@
+modern european ring width masters as supplied by dave brown march 95

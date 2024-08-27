@@ -1,0 +1,1 @@
+class customer class customer in testuserstamp_testrb parent activerecordbase validate

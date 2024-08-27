@@ -1,0 +1,1 @@
+create_with_user activerecorduserstamp file libuserstamprb line 31 def create_with_user if record_userstamps and user_modelcurrent_user nil write_attributecreated_by user_modelcurrent_useridto_i if respond_tocreated_by and selfcreated_bynil write_attributeupdated_by user_modelcurrent_useridto_i if respond_toupdated_by end create_without_user end

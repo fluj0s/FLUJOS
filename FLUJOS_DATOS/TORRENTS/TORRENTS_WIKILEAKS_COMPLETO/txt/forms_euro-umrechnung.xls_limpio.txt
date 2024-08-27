@@ -1,0 +1,1 @@
+euroumrechnungstabelle umrechnungskurs 15 50 euro 75 chf 100 euro 150 chf 200 euro 300 chf 500 euro 750 chf 1000 euro 1500 chf 2000 euro 3000 chf

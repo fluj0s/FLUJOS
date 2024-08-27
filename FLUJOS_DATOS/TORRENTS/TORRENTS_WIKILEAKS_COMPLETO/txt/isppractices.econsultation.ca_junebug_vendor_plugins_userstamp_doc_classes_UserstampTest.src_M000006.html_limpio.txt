@@ -1,0 +1,1 @@
+test_created_by userstamptest file testuserstamp_testrb line 56 def test_created_by assert_equal first_user usercurrent_user assert_equal first_user first_entrycreated_by assert_equal second_user second_entrycreated_by assert_nil first_postcreated_by assert_nil second_postcreated_by end

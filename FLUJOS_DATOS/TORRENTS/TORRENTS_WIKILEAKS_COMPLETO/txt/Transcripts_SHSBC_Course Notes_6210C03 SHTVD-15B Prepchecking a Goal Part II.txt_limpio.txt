@@ -1,0 +1,1 @@
+6210c03 shtvd15b prepchecking goal part ii continuation of the above lrh prepchecks the goal to know good trs good example of absence of q and

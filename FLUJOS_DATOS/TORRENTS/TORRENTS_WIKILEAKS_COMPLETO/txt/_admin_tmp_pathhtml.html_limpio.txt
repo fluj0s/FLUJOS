@@ -1,0 +1,1 @@
+usrbin usrucb usrccsbin usrxpg4bin usrlocalbin optperlbin usrxbin usrdtbin optsshbin usrjavabin optmysqlbin optfsfgzipbin optaegsbin opttexbin optsbprocmbin optjbxvbin optsslbin optrsyncbin optgnupgbin optrrdtoolbin usrlocalsslbin

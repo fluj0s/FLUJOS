@@ -1,0 +1,1 @@
+binsh for i in cat tmpfl2 do nfgrep i tmpfl wc cut c08 echo n i tmpfl3 done

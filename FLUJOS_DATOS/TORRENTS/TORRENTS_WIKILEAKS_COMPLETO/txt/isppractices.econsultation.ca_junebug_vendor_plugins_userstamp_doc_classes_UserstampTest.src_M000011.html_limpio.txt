@@ -1,0 +1,1 @@
+test_update_with_nil_current_user userstamptest file testuserstamp_testrb line 111 def test_update_with_nil_current_user assert_equal first_user usercurrent_user first_entryupdate_attributename updated by nil assert_equal first_user first_entrycreated_by assert_equal first_user first_entryupdated_by end

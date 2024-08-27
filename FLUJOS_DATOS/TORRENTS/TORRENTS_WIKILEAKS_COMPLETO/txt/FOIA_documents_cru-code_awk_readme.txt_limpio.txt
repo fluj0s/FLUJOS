@@ -1,0 +1,1 @@
+awk routines for plotting sets of eps files tim mitchell 25204 these little programs see gvawk are useful when you want to display the eps files resulting from plothomogpro for single station without writing lots of ghostvoew commands

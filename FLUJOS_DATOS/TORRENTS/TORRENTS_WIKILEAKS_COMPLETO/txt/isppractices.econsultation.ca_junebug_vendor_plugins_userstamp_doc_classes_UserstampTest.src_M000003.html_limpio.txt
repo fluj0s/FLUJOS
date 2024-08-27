@@ -1,0 +1,1 @@
+test_ar_userstamp_loaded userstamptest file testuserstamp_testrb line 32 def test_ar_userstamp_loaded assert activerecordbaseincludeactiverecorduserstamp assert_equal first_user usercurrent_user assert_equal user first_entryuser_model assert_equal user second_entryuser_model end

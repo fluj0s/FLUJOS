@@ -1,0 +1,1 @@
+binsh gcc v fnostrictaliasing dndebug g wall wstrictprototypes fpic iextensionclass i ihomesysadminzopepython242includepython24 c threadlock_threadlockc homesysadminzopezope294finalbuildbasepython24buildtempthreadlock_threadlocko

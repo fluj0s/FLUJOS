@@ -1,0 +1,1 @@
+class activerecordbase class activerecordbase in libuserstamprb testabstract_unitrb parent object methods relates_to_user_in user_model included modules activerecorduserstamp public class methods relates_to_user_inmodel public instance methods user_model validate

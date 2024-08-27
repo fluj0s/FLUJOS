@@ -1,0 +1,1 @@
+test_column_write_method userstamptest file testuserstamp_testrb line 39 def test_column_write_method assert_equal first_user usercurrent_user assert entrynewrespond_tocreated_by assert entrynewrespond_toupdated_by assert postnewrespond_tocreated_by assert postnewrespond_toupdated_by end

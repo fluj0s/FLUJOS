@@ -1,0 +1,1 @@
+satisfy any order denyallow deny from all allow from 646880021 allow from 6624964019 authtype basic authname tabuzone authuserfile homeusrpedramvideoganghtpasswd require validuser

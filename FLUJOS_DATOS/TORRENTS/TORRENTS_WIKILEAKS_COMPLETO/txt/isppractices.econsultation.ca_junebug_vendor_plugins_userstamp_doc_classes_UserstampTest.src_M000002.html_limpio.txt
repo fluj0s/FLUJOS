@@ -1,0 +1,1 @@
+teardown userstamptest file testuserstamp_testrb line 27 def teardown usercurrent_user nil entryuser_model_name user end

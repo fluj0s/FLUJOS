@@ -1,0 +1,1 @@
+relates_to_user_in activerecordbase file libuserstamprb line 60 def selfrelates_to_user_inmodel selfuser_model_name model end

@@ -1,0 +1,1 @@
+currency note quantity amount total in rupees total value rs 1 dollars 1 6 c5d5 5 4 c6d6 10 13 c7d7 20 59 c8d8 50 12 c9d9 100 54 c10d10 e10e9e7e8e6e5 38 g10f10 2 euro 20 2 c12d12 50 4 c13d13 100 2 c14d14 500 6 c15d15 e15e14e13e12 60 g15f15 3 pounds 10 7 c17d17 20 40 c18d18 50 14 c19d19 e19e18e17 78 g19f19 4 aus dollars 50 3 c21d21 150 37 g21f21 grand total sumh8h23

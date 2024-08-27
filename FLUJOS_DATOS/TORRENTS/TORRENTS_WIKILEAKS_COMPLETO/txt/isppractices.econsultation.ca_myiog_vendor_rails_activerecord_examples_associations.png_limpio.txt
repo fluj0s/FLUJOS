@@ -1,0 +1,1 @@
+has one and belongs to picture has_one thumbnail thumbnail belongs_to picture has many user has_many computers has and belongs to many user has_and_belongs_to_many religiouscults

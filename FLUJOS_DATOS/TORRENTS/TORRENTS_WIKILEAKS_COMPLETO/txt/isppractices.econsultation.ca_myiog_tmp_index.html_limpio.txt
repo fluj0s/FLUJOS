@@ -1,0 +1,1 @@
+index of myiogtmp index of myiogtmp name last modified size description parent directory 23jul2007 2139 cache 05mar2007 2056 pids 22feb2007 2230 sessions 05mar2007 2056 sockets 05mar2007 2056 apache1336 server at wwwsesresearchcom port 80

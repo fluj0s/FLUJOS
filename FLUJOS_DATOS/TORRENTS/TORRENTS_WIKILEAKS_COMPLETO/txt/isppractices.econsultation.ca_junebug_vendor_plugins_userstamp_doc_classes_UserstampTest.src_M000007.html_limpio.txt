@@ -1,0 +1,1 @@
+test_updated_by userstamptest file testuserstamp_testrb line 65 def test_updated_by assert_equal first_user usercurrent_user assert_equal first_user first_entryupdated_by assert_equal second_user second_entryupdated_by assert_nil first_postupdated_by assert_nil second_postupdated_by end

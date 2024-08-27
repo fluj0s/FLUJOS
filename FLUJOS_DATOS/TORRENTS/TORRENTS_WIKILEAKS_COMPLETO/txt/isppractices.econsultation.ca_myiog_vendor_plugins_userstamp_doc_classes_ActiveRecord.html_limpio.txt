@@ -1,0 +1,1 @@
+module activerecord module activerecord in libuserstamprb classes and modules module activerecorduserstamp class activerecordbase validate
